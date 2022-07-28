@@ -1,0 +1,188 @@
+body{
+    background-color: white;
+    color: #000;
+    font-family: sans-serif;
+    margin:0px;
+    overflow-x:hidden;
+    min-width:1100px;
+}
+
+
+p{
+    margin:0px;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    grid-gap: 0px;
+    width:100%;
+    margin-top: 0px;
+    height:100vh;
+}
+
+
+.topsection{
+    display:grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap:2px;
+    grid-area: 1/1/7/11;
+    background-color: #1D5B2C;
+    color:white;
+}
+
+.title{
+    grid-area:1/2/3/14;
+    padding-right:20px;
+}
+
+.title h2{
+    font-size:30px;
+}
+
+#dropdown{
+    grid-area:2/17/3/21;
+    padding-right:20px;
+}
+
+
+.Select-value {
+    cursor: pointer;
+}
+
+
+
+.Select {
+    color: white !important;
+}
+
+.Select-menu-outer {
+    background-color: #1D5B2C !important;
+/*     border: 0px solid white !important; */
+}
+
+.Select div {
+    background-color: #1D5B2C !important;
+    border:0px solid white;
+}
+
+.Select-menu-outer div:hover {
+    background-color: grey !important;
+    cursor: pointer;
+}
+
+
+.Select-value-label {
+    color: white !important;
+    font-size:19px;
+    border:0px;
+}
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+  border: 1px solid white !important;
+  border-radius: 4px !important;
+}
+
+#clubimage{
+    grid-area:2/14/6/16;
+    display:flex;
+    justify-content:center;
+}
+
+.clubimage{
+    max-height:100%;
+    width:100%
+    
+}
+
+
+#name{
+    grid-area:5/8/6/12;
+    display:flex;
+    justify-content:center;
+}
+
+#playername{
+    font-weight:bold;
+}
+
+#age{
+    grid-area:5/18/6/19;
+    display:flex;
+}
+
+#agenumber{
+    font-size:25px;
+}
+
+#years{
+    font-size:12px;
+}
+
+
+.bottomsection{
+    display:grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(60, 1fr);
+    grid-gap:2px;
+    grid-area: 7/1/31/11;
+    color:#222;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:2px;
+}
+
+.rating{
+    grid-area:1/1/8/21;
+}
+
+.bottomsection .dash-graph{
+    height:100%;
+}
+
+.goals{
+    grid-area:8/7/34/21;
+}
+
+.homeaway{
+    grid-area:34/7/61/14;
+}
+
+
+.radar{
+    grid-area:34/15/61/20;
+}
+
+.tree{
+    grid-area:8/1/19/7;
+}
+
+.grid{
+    grid-area:19/1/61/7;
+    background-color:grey;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap:2px;
+}
+
+.grid div{
+    background-color:white;
+    color:#111111;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.smalltext{
+    color:#666666;
+    font-size:15px;
+}
+
+.bignumber{
+    font-size:25px;
+}
